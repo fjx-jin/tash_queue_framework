@@ -1,0 +1,16 @@
+int32 type # 0: 开始计划 1: 继续计划 2: 回充 3: 角度矫正（双天线测试成功可不用）4: 设置充电桩位置 5:充电完成，从充电桩继续计划
+int32 id  # 计划id
+
+int32 has_charging_station # 是否有充电桩
+
+float32 width
+float32 height
+
+string data # json 数据结构
+
+int32 percent   # 开始计划百分比
+
+int64 timestamp  # 时间戳，用来判断消息是否过时
+#后面传什么data自己写
+---
+bool ret # 是否成功
